@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LocalStorage Beispiel</title>
+</head>
+<body>
+    <!-- Ein Formular zum Eingeben von Daten -->
+    <form id="myForm">
+        <input type="text" id="inputData" placeholder="Daten eingeben">
+        <button type="button" onclick="saveData()">Speichern</button>
+    </form>
+
+    <!-- Ein <p>-Tag, in das die gespeicherten Daten eingefügt werden -->
+    <p id="displayData"></p>
+
+    <script>
+        // Funktion zum Speichern der Daten im LocalStorage
+        function saveData() {
+            const inputElement = document.getElementById('inputData');
+            const data = inputElement.value;
+
+            // Speichern der Daten im LocalStorage
+            localStorage.setItem('myData', data);
+
+            // Aktualisieren des <p>-Tags mit den gespeicherten Daten
+            document.getElementById('displayData').textContent = `Gespeicherte Daten: ${data}`;
+        }
+
+        // Beim Laden der Seite die gespeicherten Daten anzeigen
+        window.onload = function () {
+            const savedData = localStorage.getItem('myData');
+            if (savedData) {
+                document.getElementById('displayData').textContent = `Gespeicherte Daten: ${savedData}`;
+            }
+        };
+    </script>
+</body>
+</html>
+

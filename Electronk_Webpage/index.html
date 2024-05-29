@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ELECTRONK</title>
+    
+    <style>
+        /* Allgemeine Stile */
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f9f9f9;
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        /* Header */
+        header {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 10px 0;
+        }
+        /* Hauptinhalt */
+        .products {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+        .product {
+            background-color: #fff;
+            border: 1px solid #ddd;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            flex: 1 1 calc(33.33% - 20px);
+        }
+        .product img {
+            max-width: 100%;
+            height: auto;
+        }
+        .product h3 {
+            font-size: 1.2rem;
+            margin: 0;
+        }
+        .product p {
+            font-size: 1rem;
+            color: #777;
+        }
+        /* Footer */
+        footer {
+            text-align: center;
+            padding: 20px 0;
+            background-color: #333;
+            color: #fff;
+        }
+
+        /* Allgemeine Stile */
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f9f9f9;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+            margin: 0;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        /* Header */
+        header {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 10px 0;
+        }
+        /* Hauptinhalt */
+        .products {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+        .product {
+            background-color: #fff;
+            border: 1px solid #ddd;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            flex: 1 1 calc(33.33% - 20px);
+        }
+        .product img {
+            max-width: 100%;
+            height: auto;
+        }
+        .product h3 {
+            font-size: 1.2rem;
+            margin: 0;
+        }
+        .product p {
+            font-size: 1rem;
+            color: #777;
+        }
+        /* Footer */
+        footer {
+            width: 100%;
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 10px 0;
+        }
+
+        a {
+            color:white
+        }
+        .Info {
+            cursor: pointer;
+        }
+    </style>
+    <style>
+    ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+}
+
+li {
+  float: left;
+}
+
+li a {
+  display: inline-block;
+  color: white;   
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+li a:hover {
+  background-color: #111;
+}
+</style>
+    <ul>
+  <li><img src="Bilder/Logo.jpeg" alt="Logo" height="55" button onclick="window.location.href='Dast.php';"></li><pre></pre>
+  <li><a href="index.html">Home 🏠</a></li><pre></pre>
+  <li><a href="Warenkorp_test.html">Warenkorb🛒</a></li><pre></pre>
+  <li><a href="OldPa.html">Altepg 📺</a></li><pre></pre>
+  <li><a href="Anmeldung.html" id="login-button">Anmelden 🖤</a></li><pre></pre>
+  <li><a href="" id="logout-button">Abmelden</a></li>
+ 
+</ul>
+</head>
+<body>
+    <header></header>
+    <div class="container">
+        <div class="products">
+            <div class="product">
+                <img src="Bilder/Mikrowelle.jpg" alt="Pip_Pip_Pip"width="220" class="Info" button onclick="window.location.href='Information_mik.html';">
+                <h3>Mikrowelle</h3>
+                <p>Preis: 75,46 €</p>
+                <p>Farbe: Schwarz</p>
+                <p>Beschreibung: SEVERIN Mikrowelle Solo,
+                    zum Auftauen und Erhitzen, Mikrowelle mit
+                    Drehteller für gleichmäßige Wärmeverteilung,
+                    schwarz, MW 7886
+                </p>
+            </div>
+            <div class="product">
+                <img src="Bilder/kaf_2.webp" alt="Wach_werde_Maschine" class="Info" width="165" button onclick="window.location.href='Information_Kaf.html';">
+                <h3>Kaffeemaschine</h3>
+                <p>Preis: 599,99 €</p>
+                <p>Farbe: Schwarz</p>
+                <p>Beschreibung: Philips Series 5400 Kaffeevollautomat –
+                    LatteGo Milchsystem, 12 Kaffeespezialitäten,
+                    Intuitives Display, 4 Benutzerprofile,
+                    Schwarz (EP5441/50)
+                </p>
+            </div>
+            <!-- Weitere Produkte hier einfügen -->
+            <div class="product">
+                <img src="Bilder/Wasserdreher.jpg" alt="Wasserdrehmaschine" class="Info" width="165" button onclick="window.location.href='Information_was.html';">
+                <h3>Waschmaschine</h3>
+                <p>Preis 479,00 €</p>
+                <p>Farbe: Weiß</p>
+                <p>Bauknecht W Active 8A Waschmaschine Frontlader/
+                    8kg/ kraftvolle Fleckentfernung/ Dampf Programme/
+                    Steam Hygiene Option/ Energieeffizienzklasse A/
+                    Stopp&Add Funktion/ ProSilent-Motor [Energieklasse A]
+                </p>
+            </div>
+            <div class="product">
+                <img src="Bilder/Kühlmaschine.jpg" alt="Kalt_mach_Maschine" class="Info" width="135" button onclick="window.location.href='Information_küm.html';">
+                <h3>Kühlschrank</h3>
+                <p>Preis: 582,99 €</p>
+                <p>Farbe: Silber</p>
+                <p>PKM SBS288-151EIXWD Side by Side Kühl-Gefrierkombination 
+                    | Inox Design | 288 Liter Kühlen | 151 Liter Kühlen | 39dB 
+                    | NoFrost | Wasserspender | 286kWh | Display | Freistehend
+                </p>
+            </div>
+            <div class="product">
+                <img src="Bilder/Heißmaschine.jpg" alt="Gänsebraten"width="220" class="Info" button onclick="window.location.href='Information_Bac.html';">
+                <h3>Backofen</h3>
+                <p>Preis: 519,99 €</p>
+                <p>Farbe: Edelstahl</p>
+                <p>Bauknecht BAR2S K8 V2 IN Dampf-Backofen inklusive 2-fach 
+                    Backauszug/A+/71 L Maxi-Garraum/Heißluft/Gentle Steam mit 
+                    Feuchtigkeitszugabe/Einfaches Reinigen mit SmartClean-Innenraum, 
+                    Edelstahl
+                </p>
+            </div>
+            <div class="product">
+                <img src="Bilder/Heißplat.jpg" alt="Nicht_Anfassen"width="220" class="Info" button onclick="window.location.href='Information_hed.html';">
+                <h3>Herd Induktion</h3>
+                <p>Preis: 248,85 €</p>
+                <p>Farbe: Edelstahl</p>
+                <p>AEG HK634060XB Autarkes Kochfeld / 
+                    Strahlenbeheizt / 60 cm / Edelstahlrahmen / 
+                    4 Kochzonen / Bräterzone / Mehrkreiskochzone / 
+                    Kindersicherung
+                </p>
+            </div>
+            <div class="product">
+                <img src="Bilder/Küchendreher.jpg" alt="Nicht zu schnell"width="220" class="Info" button onclick="window.location.href='Information_küc.html';">
+                <h3>Küchenmaschine</h3>
+                <p>Preis: 105,99 €</p>
+                <p>Farbe: Korall</p>
+                <p>Klarstein Küchenmaschine, Knetmaschine mit 5L
+                     Schüssel, 2000W Profi Küchenmaschine mit Knethaken
+                      und Schneebesen, Universal Küchenmaschine mit 6 
+                      Stufen, Teigmaschine zum Rühren, Kneten und Aufschlagen
+                </p>
+            </div>
+            <div class="product">
+                <img src="Bilder/friteuse.jpg" alt="Heiß unf fettig"width="220" class="Info" button onclick="window.location.href='Information_fri.html';">
+                <h3>Fritteuse</h3>
+                <p>Preis: 69,99 €</p>
+                <p>Farbe: Stainless Steel</p>
+                <p>Chefman 4,3 Liter Fritteuse mit Sieb, XL Jumbo Größe, einstellbare Temperatur & Timer, perfekt für frittierte Hähnchen, Garnelen, Chips & mehr, abnehmbarer Öl-Behälter, Edelstahl
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <p button color:black> <a href="">© 2024 Mein Online-Shop</p>
+    </footer>
+</body>
+
+    
+    <script>
+
+        // Überprüfen, ob der Benutzer bereits angemeldet ist (mit Local Storage)
+        const isLoggedIn = localStorage.getItem(" ");
+
+        if (isLoggedIn) {
+            document.getElementById("login-button").classList.add("logged-in");
+            document.getElementById("login-button").textContent = "Angemeldet💚";
+        };
+
+        document.getElementById("logout-button").addEventListener("click", function() {
+            // Local Storage leeren
+            localStorage.removeItem(' ');
+           
+        })    
+    </script>
+
+</html>
